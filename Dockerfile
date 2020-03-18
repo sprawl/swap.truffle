@@ -11,4 +11,4 @@ COPY . .
 
 RUN truffle compile
 
-CMD ["truffle", "deploy", "--network=testnet"]
+CMD ["ash"]

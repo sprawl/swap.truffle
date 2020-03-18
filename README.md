@@ -68,3 +68,13 @@ node verify.js $CONTRACT_ADDRESS build/flattened.sol
 - [x] заполнить truffle.js
 - [x] code review
 ```
+
+## Testnet
+
+    docker build -t contracts .
+
+    # When network is online
+    docker run --rm contracts truffle deploy --network=testnet
+
+    # Get the contract json
+    docker run --rm contracts cat /build/build/contracts/EthToSmthSwaps.json >> EthToSmthSwaps.json
